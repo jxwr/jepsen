@@ -41,3 +41,24 @@ sudo killall -s SIGHUP dnsmasq
 ```
 sudo lxc-start -n n{1..10}
 ```
+
+添加Host信息到每个Container
+```
+127.0.0.1       localhost n10 n10.local
+::1             localhost ip6-localhost ip6-loopback
+fe00::0         ip6-localnet
+ff00::0         ip6-mcastprefix
+ff02::1         ip6-allnodes
+ff02::2         ip6-allrouters
+
+10.0.3.101 n1 n1.local
+10.0.3.102 n2 n2.local
+10.0.3.103 n3 n3.local
+10.0.3.104 n4 n4.local
+10.0.3.105 n5 n5.local
+10.0.3.106 n6 n6.local
+10.0.3.107 n7 n7.local
+10.0.3.108 n8 n8.local
+10.0.3.109 n9 n9.local
+10.0.3.110 n10 n10.local
+```
